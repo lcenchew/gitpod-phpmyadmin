@@ -4,7 +4,7 @@ echo "Installing PHPMyAdmin"
 
 mkdir public
 cd public
-git clone https://github.com/phpmyadmin/phpmyadmin.git
+git clone --depth 1 https://github.com/phpmyadmin/phpmyadmin.git
 cd phpmyadmin
 composer update --no-dev
 yarn install
