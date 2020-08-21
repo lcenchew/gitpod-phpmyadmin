@@ -1,5 +1,2 @@
 image:
   file: .gitpod.dockerfile
-tasks:
- - init: . ${GITPOD_REPO_ROOT}/install.sh
- 
