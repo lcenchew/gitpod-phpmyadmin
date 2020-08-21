@@ -2,6 +2,7 @@ FROM gitpod/workspace-full:latest
 
 USER root
 
+ENV DEBIAN_FRONTEND noninteractive
 RUN echo "phpmyadmin phpmyadmin/internal/skip-preseed boolean true" | debconf-set-selections \
    && echo "phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2" | debconf-set-selections \
    && echo "phpmyadmin phpmyadmin/dbconfig-install boolean true" | debconf-set-selections \
